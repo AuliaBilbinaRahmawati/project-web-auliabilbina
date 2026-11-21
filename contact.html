@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Aulia Creative Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="aulia_header">
+        <a href="index.html" id="aulia_logo">Aulia Creative Tech</a>
+        <button id="aulia_nav_toggle" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul class="aulia_menu" id="aulia_nav_list">
+                <li class="aulia_menu_item"><a href="index.html">Beranda</a></li>
+                <li class="aulia_menu_item"><a href="tentang.html">Tentang Kami</a></li>
+                <li class="aulia_menu_item"><a href="layanan.html">Layanan &amp; Tarif</a></li>
+                <li class="aulia_menu_item"><a href="galeri.html">Galeri</a></li>
+                <li class="aulia_menu_item"><a href="jadwal.html">Jadwal</a></li>
+                <li class="aulia_menu_item"><a href="profil.html">Profil Pembuat</a></li>
+                <li class="aulia_menu_item"><a href="faq.html" class="aulia_active">FAQ</a></li>
+                <li class="aulia_menu_item"><a href="contact.html" class="aulia_active">Kontak</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aulia_container">
+            <h2 class="aulia_section_title">Hubungi Pemilik Website</h2>
+            <p class="aulia_section_desc">Silakan isi form inputan di bawah ini untuk mengirim pesan kepada pemilik website.</p>
+            <div class="aulia_form_box">
+                <form id="aulia_contact_form">
+                    <div class="aulia_form_group">
+                        <label for="aulia_nama" class="aulia_label">Nama Lengkap *</label>
+                        <input type="text" id="aulia_nama" class="aulia_input" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="aulia_form_group">
+                        <label for="aulia_email" class="aulia_label">Email *</label>
+                        <input type="email" id="aulia_email" class="aulia_input" placeholder="nama@email.com" required>
+                    </div>
+                    <div class="aulia_form_group">
+                        <label for="aulia_subjek" class="aulia_label">Subjek Pesan</label>
+                        <select id="aulia_subjek" class="aulia_select">
+                            <option value="Pemesanan Layanan">Pemesanan Layanan</option>
+                            <option value="Pendaftaran Workshop">Pendaftaran Workshop</option>
+                            <option value="Pertanyaan Umum">Pertanyaan Umum</option>
+                        </select>
+                    </div>
+                    <div class="aulia_form_group">
+                        <label for="aulia_pesan" class="aulia_label">Pesan *</label>
+                        <textarea id="aulia_pesan" rows="5" class="aulia_textarea" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="aulia_btn aulia_btn_primary aulia_btn_full">Kirim Pesan</button>
+                    <p id="aulia_form_status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="aulia_footer">
+        <p>&copy; 2026 Aulia Bilbina Rahmawati - Teknik Informatika. Dibuat manual dengan HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

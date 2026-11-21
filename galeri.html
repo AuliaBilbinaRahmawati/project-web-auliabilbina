@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Aulia Creative Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="aulia_header">
+        <a href="index.html" id="aulia_logo">Aulia Creative Tech</a>
+        <button id="aulia_nav_toggle" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul class="aulia_menu" id="aulia_nav_list">
+                <li class="aulia_menu_item"><a href="index.html">Beranda</a></li>
+                <li class="aulia_menu_item"><a href="tentang.html">Tentang Kami</a></li>
+                <li class="aulia_menu_item"><a href="layanan.html">Layanan &amp; Tarif</a></li>
+                <li class="aulia_menu_item"><a href="galeri.html" class="aulia_active">Galeri</a></li>
+                <li class="aulia_menu_item"><a href="jadwal.html">Jadwal</a></li>
+                <li class="aulia_menu_item"><a href="profil.html">Profil Pembuat</a></li>
+                <li class="aulia_menu_item"><a href="faq.html" class="aulia_active">FAQ</a></li>
+                <li class="aulia_menu_item"><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aulia_container">
+            <h2 class="aulia_section_title">Galeri Karya &amp; Portofolio</h2>
+            <p class="aulia_section_desc">Pilih kategori di bawah untuk memfilter proyek.</p>
+            <div class="aulia_filter_group">
+                <button class="aulia_btn aulia_btn_primary aulia_filter_btn" data-filter="all">Semua</button>
+                <button class="aulia_btn aulia_filter_btn" data-filter="web">Website</button>
+                <button class="aulia_btn aulia_filter_btn" data-filter="ui">Desain UI/UX</button>
+            </div>
+            <div class="aulia_grid">
+                <div class="aulia_card aulia_gallery_item" data-category="web">
+                    <span class="aulia_badge">Website</span>
+                    <h3 class="aulia_card_title">Portal Akademik 7 Halaman</h3>
+                    <p>Website informasi akademik dengan navigasi terpisah antar halaman dan desain responsif.</p>
+                </div>
+                <div class="aulia_card aulia_gallery_item" data-category="ui">
+                    <span class="aulia_badge">Desain UI/UX</span>
+                    <h3 class="aulia_card_title">Desain Antarmuka Mobile</h3>
+                    <p>Perancangan tata letak aplikasi mobile dengan fokus pada kemudahan navigasi pengguna.</p>
+                </div>
+                <div class="aulia_card aulia_gallery_item" data-category="web">
+                    <span class="aulia_badge">Website</span>
+                    <h3 class="aulia_card_title">Katalog Produk Digital</h3>
+                    <p>Halaman etalase produk interaktif berbasis HTML, CSS, dan JavaScript.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="aulia_footer">
+        <p>&copy; 2026 Aulia Bilbina Rahmawati - Teknik Informatika. Dibuat manual dengan HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+/* Seluruh ID dan Class menggunakan awalan nama pembuat (#aulia_ dan .aulia_) */
+:root {
+    --primary-pink: #d81b60;
+    --soft-pink: #fce4ec;
+    --accent-pink: #ad1457;
+    --dark-text: #2c2c2c;
+    --light-bg: #fff8fa;
+    --white: #ffffff;
+    --gray-border: #f8bbd0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Header & Navigasi */
+#aulia_header {
+    background: linear-gradient(135deg, var(--primary-pink), var(--accent-pink));
+    color: var(--white);
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#aulia_logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#aulia_nav_toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.aulia_menu {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.aulia_menu_item a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.aulia_menu_item a:hover,
+.aulia_menu_item a.aulia_active {
+    background-color: var(--white);
+    color: var(--primary-pink);
+}
+
+/* Hero Section */
+#aulia_hero {
+    background: linear-gradient(rgba(173, 20, 87, 0.85), rgba(216, 27, 96, 0.85)),
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.aulia_hero_title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.aulia_hero_subtitle {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+/* Tombol */
+.aulia_btn {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary-pink);
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.aulia_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aulia_btn_primary {
+    background-color: var(--primary-pink);
+    color: var(--white);
+}
+
+.aulia_btn_full {
+    width: 100%;
+    text-align: center;
+}
+
+/* Container & Sections */
+.aulia_container {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 62vh;
+}
+
+.aulia_section_title {
+    text-align: center;
+    color: var(--accent-pink);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.aulia_section_desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Grid & Cards */
+.aulia_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.aulia_card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(216, 27, 96, 0.08);
+    border: 1px solid var(--gray-border);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aulia_card:hover {
+    transform: translateY(-5px);
+}
+
+.aulia_card_title {
+    color: var(--primary-pink);
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.aulia_badge {
+    display: inline-block;
+    width: fit-content;
+    background: var(--soft-pink);
+    color: var(--accent-pink);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aulia_price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    margin-bottom: 18px;
+}
+
+.aulia_price span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #666;
+}
+
+/* Filter Galeri */
+.aulia_filter_group {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Profil Pembuat */
+.aulia_profile_card {
+    text-align: center;
+}
+
+.aulia_profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 4px solid var(--primary-pink);
+}
+
+.aulia_profile_subtitle {
+    color: var(--accent-pink);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.aulia_biodata_box {
+    text-align: left;
+    background: var(--light-bg);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-border);
+}
+
+.aulia_biodata_box p {
+    margin-bottom: 10px;
+}
+
+.aulia_biodata_box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Form Styling */
+.aulia_form_box {
+    background: var(--white);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(216, 27, 96, 0.1);
+    border: 1px solid var(--gray-border);
+}
+
+.aulia_form_group {
+    margin-bottom: 18px;
+}
+
+.aulia_label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--accent-pink);
+}
+
+.aulia_input, .aulia_textarea, .aulia_select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid var(--gray-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.aulia_input:focus, .aulia_textarea:focus, .aulia_select:focus {
+    border-color: var(--primary-pink);
+}
+
+#aulia_form_status {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Table */
+.aulia_table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.aulia_table th {
+    background-color: var(--primary-pink);
+    color: var(--white);
+    padding: 14px;
+    text-align: left;
+}
+
+.aulia_table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--soft-pink);
+}
+
+/* Footer */
+#aulia_footer {
+    background-color: var(--accent-pink);
+    color: var(--white);
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    #aulia_nav_toggle {
+        display: block;
+    }
+    .aulia_menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .aulia_menu.aulia_show {
+        display: flex;
+    }
+    .aulia_hero_title {
+        font-size: 1.85rem;
+    }
+}
+/* Fitur Accordion FAQ */
+#aulia_faq_wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.aulia_faq_item {
+    background: var(--white);
+    border: 1.5px solid var(--gray-border);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.06);
+}
+
+.aulia_faq_question {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background-color: var(--soft-pink);
+    color: var(--accent-pink);
+    border: none;
+    font-size: 1.02rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.25s ease;
+}
+
+.aulia_faq_question:hover {
+    background-color: #f8bbd0;
+}
+
+.aulia_faq_icon {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    margin-left: 12px;
+}
+
+.aulia_faq_answer {
+    display: none;
+    padding: 16px 20px;
+    background-color: var(--white);
+    color: var(--dark-text);
+    border-top: 1px solid var(--soft-pink);
+}
+
+.aulia_faq_item.aulia_faq_open .aulia_faq_answer {
+    display: block;
+}
